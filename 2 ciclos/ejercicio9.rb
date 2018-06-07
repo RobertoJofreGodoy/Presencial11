@@ -17,11 +17,7 @@ b = ''
 
 a.times do |i|
 		if i ==0
-			b += "<table>\n"
-		elsif i == 1
-				b += "\t<tbody>\n"
-			elsif i == 2
-				b += "\t \t<tr>\n"
+			b += "<table>\n \t<tbody>\n \t \t<tr>\n"
 			elsif  i == (a-3)
 				b += "\t \t</tr>\n"
 			elsif i == (a-2)

@@ -25,16 +25,14 @@ Generar el código para imprimir la siguiente tabla:
  </table>
 =end
 
-a = 5
+a = 4
 x = 1
 t = 6
 b = ''
 
 a.times do |i|
     if i ==0
-      b += "<table>\n"
-    elsif i == 1
-        b += "<tbody>\n"
+      b += "<table>\n<tbody>\n"
       elsif i == (a-2)
         b += "</tbody>\n"
       elsif i == (a-1)
@@ -43,11 +41,11 @@ a.times do |i|
       for y in 1..3 do
         t.times do |j|
           if j == 0
-            b += "\t <tr>\n"
+            b += "\t<tr>\n"
           elsif j == (t-1)
-            b += "\t </tr>\n"
+            b += "\t</tr>\n"
               else
-                b += "\t \t <td> #{x} </td>\n"
+                b += "\t \t<td> #{x} </td>\n"
                 x +=1 
           end      
         end      
