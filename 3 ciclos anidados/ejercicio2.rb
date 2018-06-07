@@ -47,7 +47,7 @@ a.times do |i|
           elsif j == (t-1)
             b += "\t </tr>\n"
               else
-                b += "\t \t \t <td> #{x} </td>\n"
+                b += "\t \t <td> #{x} </td>\n"
                 x +=1 
           end      
         end      
